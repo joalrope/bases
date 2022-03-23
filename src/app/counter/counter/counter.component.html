@@ -1,0 +1,12 @@
+<h1>{{ title }}</h1>
+
+<h3>
+  La base es de: <span>{{ base }}</span>
+</h3>
+<h3>
+  El valor inicial es de: <span>{{ initValue }}</span>
+</h3>
+<button (click)="updateCounter(-base)">- {{ base }}</button>
+<span>{{ number }}</span>
+<button (click)="updateCounter(base)">+ {{ base }}</button>
+<button (click)="number = initValue">Reset</button>
